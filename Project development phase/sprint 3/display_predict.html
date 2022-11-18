@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    .divs{
+      display: flex;
+      justify-content: space-around;
+      margin-top: 10%;
+    }
+    .result{
+      margin-top: 8%;
+      font-size: xx-large;
+    }
+    img{
+      border-radius: 2%;
+    }
+    body{
+      background-color: chocolate;
+    }
+    h1{
+      margin-left: 30%;
+    }
+  </style>
+  </head>
+  <body>
+    <h1>Hand Written Digit Recognition</h1>
+    <div class="divs">
+
+    <img src="{{ user_image }}" alt="Italian Trulli" width="300" height="300">
+    <div class="result"><p>The Recognized digit is :  {{recognized}} 100%</p></div>
+    
+    </div>
+    
+    </body>
+</html>
