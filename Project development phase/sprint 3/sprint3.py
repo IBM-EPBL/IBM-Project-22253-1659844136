@@ -1,6 +1,8 @@
 
 
-# Importing Necessary Libraries
+# Importing Necessary 
+#------------------------------------------------Sprint 1
+
 import numpy #used for numerical analysis
 import tensorflow as tf#open source used for both ML and DL for computation
 from tensorflow.keras.datasets import mnist #mnist dataser
@@ -15,14 +17,13 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 mnist=tf.keras.datasets.mnist
-
 (x_train,y_train),(x_test,y_test)=mnist.load_data()
 
 #gettting shape of data
 print("Shape of training and testing dataset ")
 print(x_train.shape)
 print(x_test.shape)
-
+#------------------------------------------------------Sprint 2
 print("Analyzing the data")
 print("Printing the first data and its label")
 print(x_train[0])
@@ -56,6 +57,7 @@ model.add(Dense(no_of_classes,activation='softmax'))
 model.compile(loss="categorical_crossentropy",optimizer='adam',metrics=['accuracy'])
 model.fit(x_train,y_train,epochs=5,validation_split=0.3,batch_size=5)
 
+#--------------------------------------------------Sprint 3
 #Evaluation
 test_loss,test_acc=model.evaluate(x_test,y_test)
 print("Test accuracy: ",test_acc)
